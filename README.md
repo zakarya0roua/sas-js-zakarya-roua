@@ -7,9 +7,9 @@
 
 | Information | À compléter |
 |---|---|
-| Nom et prénom | ... |
-| Classe | ... |
-| Nom d'utilisateur GitHub | ... |
+| Nom et prénom |zakarya roua |
+| Classe | A |
+| Nom d'utilisateur GitHub | zakarya0roua |
 
 ## 🧭 Comment travailler
 
