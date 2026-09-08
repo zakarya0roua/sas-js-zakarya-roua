@@ -9,4 +9,8 @@
  */
 'use strict';
 
-// TODO: écris ta solution ici.
+let data = "123";
+console.log("type de data:", typeof(data));
+
+let nouveau_data = Number(data);
+console.log("nouveau son type:", typeof(nouveau_data));
