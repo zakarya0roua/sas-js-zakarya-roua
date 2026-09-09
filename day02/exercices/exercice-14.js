@@ -18,7 +18,7 @@
 
 let nombre = 1;
 
-while(nombre * nombre <= 1000){
+while((nombre * nombre) <= 1000){
     nombre++;
 }
 console.log(nombre);
