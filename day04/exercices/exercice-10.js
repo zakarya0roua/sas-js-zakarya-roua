@@ -16,10 +16,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 function estPalindrome(mot){
-    let last_mot = mot.length - 1;
-
+    let lower = mot.toLowerCase();
+    let last_mot = lower.length - 1;
     for(let i = 0; i <= last_mot; i++){
-        if(mot[i] != mot[last_mot]){
+        if(lower[i] != lower[last_mot]){
             return false;
         }
         last_mot--;
@@ -27,4 +27,4 @@ function estPalindrome(mot){
     return true;
 }
 
-console.log(estPalindrome("radar"))
+console.log(estPalindrome("Radar"))
