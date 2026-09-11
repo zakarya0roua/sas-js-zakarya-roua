@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let num_téléphone = "0612345678";
+let i = 0;
+let téléphone = Number(num_téléphone);
+while(téléphone[i] != undefined){
+    i++;
+}
+if(i == 10  && typeof(téléphone) === "Number"){
+    console.log("Numéro valide")
+}
+else{
+    console.log("Numéro invalide")
+}
