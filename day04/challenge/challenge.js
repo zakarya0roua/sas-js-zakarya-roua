@@ -22,3 +22,28 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let or = 0;
+
+function ajouterOr(montant){
+    or += montant;
+    console.log("Vous avez ramassé " + montant + " total d'or " + or);
+}
+
+function depenserOr(montant){
+    if(montant <= or){
+        or -= montant;
+        ajouterOr(montant);
+    }else{
+        console.log("Fonds insuffisants");
+    }
+}
+
+function combatGagne(){
+    let aleatoire = Math.floor(Math.random() * 50 - 10 + 1) + 10;   // max = 50 , min = 10
+    ajouterOr(aleatoire);
+}
+
+combatGagne()
+combatGagne()
+combatGagne()
+depenserOr(100)
