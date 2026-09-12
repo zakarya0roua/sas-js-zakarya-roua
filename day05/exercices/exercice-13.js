@@ -14,4 +14,21 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function formater(montant){
+    let str = String(montant);
+    let result = "";
+    let count = 0;
+    for(let i = str.length -1; i >= 0; i--){
+        if(count == 3){
+            result = " " + result;
+            count = 0;
+        }
+        count++;
+        result = str[i] + result;
+    }
+    result += " MAD";
+    return (result);
+}
+
+console.log(formater(1234567))

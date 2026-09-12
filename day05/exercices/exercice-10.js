@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function email(gmail){
+    let result = "";
+    for(let i = 0; i < gmail.length; i++){
+        if(gmail[i] === "@"){
+            i++;
+            for(; i < gmail.length; i++){
+                result += gmail[i];
+            }
+            return result;
+        }
+    }
+}
+
+console.log(email("contact@youcode.ma"))

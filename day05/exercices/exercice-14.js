@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let txt = "Bonjour   tout le   monde";
+let mot = txt.split(" ");
+let len = mot.length;
+let count = 0;
+
+for(let i = 0; i < mot.length; i++){
+    if(mot[i] != ""){
+        count++;
+    }
+}
+
+console.log(count)
+

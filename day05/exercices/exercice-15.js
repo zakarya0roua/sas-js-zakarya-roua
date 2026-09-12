@@ -15,4 +15,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let mot_1 = "chien";
+let mot_2 = "niche";
+
+mot_1 = mot_1.split("").sort().join("");
+
+
+mot_2 = mot_2.split("").sort().join("");
+
+
+(mot_1 === mot_2) ? console.log("anagramme") : console.log("n'est pas anagramme")

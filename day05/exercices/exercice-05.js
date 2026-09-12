@@ -14,4 +14,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+function premierEsoace(mot){
+    let espace = " ";
+
+    for(let i = 0; i < mot.length; i++){
+        if(mot[i] === espace){
+        return (i);
+    }
+}
+
+}
+console.log(premierEsoace("Bonjour tout le monde"));

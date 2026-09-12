@@ -9,3 +9,14 @@
  */
 'use strict';
 
+let mot = "J'apprends le JavaScript à YouCode";
+let motRecherche = "javascript";
+
+let mot_lowr = mot.toLowerCase();
+let motRecherche_lowr = motRecherche.toLowerCase();
+
+if (mot_lowr.includes(motRecherche_lowr)) {
+  console.log("Le mot est présent dans la phrase.");
+}else {
+  console.log("Le mot n'est pas présent dans la phrase.");
+}

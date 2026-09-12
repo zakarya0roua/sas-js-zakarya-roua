@@ -10,7 +10,9 @@
 'use strict';
 
 
-let ISO = ["2024-10-15"];
-
-let annee = new Date(ISO.join()).getFullYear()
-console.log(annee);
+let ISO = "2024-10-15";
+let date = "";
+for(let i = 0; i < 4; i++){
+    date += ISO[i]
+}
+console.log(date);

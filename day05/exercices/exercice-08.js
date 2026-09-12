@@ -14,4 +14,17 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+
+
+function capitaliser(mot){
+    let result = "";
+    let low_mot = mot.slice(1).toLowerCase()
+    let Upr_mot = mot[0].toUpperCase()
+    result += Upr_mot;
+    result += low_mot;
+    return result;
+}
+
+console.log(capitaliser("yOUcoDe"))

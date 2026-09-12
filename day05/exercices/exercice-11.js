@@ -15,4 +15,15 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let phrase = "Hyper Text Markup Language";
+let ph = phrase.split(" ");
+let result = "";
+
+for(let i = 0; i < ph.length; i++){
+    
+        result += ph[i][0]
+}
+
+console.log(result.toUpperCase())
+

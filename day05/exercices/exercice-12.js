@@ -14,4 +14,16 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let phrase = "Bonjour le monde";
+let ph = phrase.split(" ");
+let result = "";
+
+for(let i = ph.length - 1; i >= 0; i--){
+    for(let j = 0; j < ph[i].length; j++){
+        result += ph[i][j];
+    }
+    result += " ";
+}
+
+console.log(result)
