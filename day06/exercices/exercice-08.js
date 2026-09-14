@@ -14,4 +14,22 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tableau = [13, 3, 99, 35, 109]
+
+function max_min_number(tableau){
+    let max = tableau[0];
+    let min = tableau[0]
+
+    for(let i = 0; i < tableau.length; i++){
+        if(max >= tableau[i]){
+            max = tableau[i];
+        }
+        else if(min < tableau[i]){
+            min = tableau[i];
+        }
+    }
+    return [max, min];
+}
+
+console.log(max_min_number(tableau))

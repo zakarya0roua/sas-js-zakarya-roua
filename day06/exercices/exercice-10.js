@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let moit = ["Jan", "Fev", "MARS_EN_TROP", "Avril"]
+let intirdi = "MARS_EN_TROP";
+
+for(let i = 0; i < moit.length; i++){
+    if(moit[i] === intirdi){
+        moit.splice(i, 1)
+    }
+}
+console.log(moit)
+
