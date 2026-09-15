@@ -14,4 +14,18 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+let tableau = [1, 2, 2, 3, 4, 4, 5];
+let nouveau_TABL = [];
+
+function dedoublonneur(tableau){
+    for(let i = 0; i < tableau.length; i++){
+        let doublon = tableau[i];
+        
+        if(nouveau_TABL.lastIndexOf(doublon) === -1){
+            nouveau_TABL.push(doublon);
+        }
+    }
+    return nouveau_TABL;
+}
+
+console.log(dedoublonneur(tableau))

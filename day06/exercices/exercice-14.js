@@ -14,4 +14,12 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tableau = [1, 2, 3]
+let dernier = tableau[tableau.length - 1]
+
+tableau.pop()
+tableau.unshift(dernier)
+
+
+console.log(tableau)

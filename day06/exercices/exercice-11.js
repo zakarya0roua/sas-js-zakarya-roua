@@ -14,4 +14,9 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tableau = [1, 23, 4, 56, 7, 8, 987, 65, 43, 45, 67, 89, 8, 765, 43, 3456, 78, 8, 76, 54, 3, 2, 3, 456, 7, 876, 54];
+let premiers = [];
+    premiers = tableau.slice(0, 10)
+
+console.log(premiers);
