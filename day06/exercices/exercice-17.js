@@ -14,4 +14,19 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let tableau = ["pomme", "banane", "pomme", "orange", "banane", "pomme"]
+
+function combien(tableau){
+    let trete = {}
+    for(let i = 0; i < tableau.length; i++){
+        let element = tableau[i]
+        if(trete[element] !== undefined){
+            trete[element]++;
+        }else
+            trete[element] = 1;
+    }
+    return trete;
+}
+
+console.log(combien(tableau))

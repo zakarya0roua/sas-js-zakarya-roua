@@ -19,4 +19,36 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+let panier = [101, 105, 101, 102]
+function ajouterAuPanier(id){
+    panier.push(id);
+}
+
+function retirerDuPanier(id){
+
+    panier = panier.filter(panier => panier !== id);
+    return panier;
+}
+
+function afficherQuantites(){
+    let affiche = {};
+
+    for(let i = 0; i < panier.length; i++){
+        let id = panier[i];
+        if(affiche[id] === undefined){
+            affiche[id] = 1;
+        }else
+        affiche[id]++;
+    }
+    return affiche
+}
+
+console.log(panier);
+
+ajouterAuPanier(105);
+console.log(panier);
+
+retirerDuPanier(101);
+console.log(panier);
+
+console.log(afficherQuantites());
