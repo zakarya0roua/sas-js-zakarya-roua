@@ -16,13 +16,16 @@
 // 2. Écris ta solution sous cette ligne.
 
 let liste = [
-    { article: "PC", prix:}, "1500$" 
+    { article: "PC", prix: "1500$"}, 
     { article: "Souris", prix: "25$" }
 ]
 
 function scrappe(arr){
-
     for(let i = 0; i < arr.length; i++){
-
+        let prixModifie = Number(arr[i].prix.replace("$", ""));
+        arr[i].prix = prixModifie;
     }
+    return arr
 }
+
+console.log(scrappe(liste))
