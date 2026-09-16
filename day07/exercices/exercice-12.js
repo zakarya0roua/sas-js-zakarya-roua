@@ -14,4 +14,13 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+let compteBancaire = {
+    solde: 66,
+    moha (montant){
+        return this.solde += montant;
+    }
+
+}
+
+console.log(compteBancaire.moha(10))

@@ -14,4 +14,14 @@
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
-// TODO: écris ta solution ici.
+
+
+let entreprise = {
+    nom: "sas nador",
+    employe: [{nom: "zakarya", prenom: "roua"},
+        {nom: "achraf", prenom: "cherdal"},
+        {nom: "mohamad", prenom: "lamssiah"}
+    ]
+}
+
+console.log(entreprise.employe[1].prenom)
